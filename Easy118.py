@@ -18,7 +18,6 @@ class Solution(object):
                 result.append(arr)
             else:
                 arr.append(1)
-                print(len(result[i-1]))
                 for x in range(len(result[i-1])-1):
                     arr.append(result[i-1][x]+result[i-1][x+1])
                 arr.append(1)
