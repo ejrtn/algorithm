@@ -26,6 +26,3 @@ class Solution(object):
         return result[len(result)-1]
 		
 
-s = Solution()
-print(s.generate(3))
-

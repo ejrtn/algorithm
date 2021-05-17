@@ -26,6 +26,3 @@ class Solution(object):
         return result
 		
 
-s = Solution()
-print(s.generate(4))
-
