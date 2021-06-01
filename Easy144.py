@@ -31,3 +31,32 @@ class Solution(object):
         else:
             return a
         
+
+
+class Solution(object):
+    def preorderTraversal(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[int]
+        """
+        
+        
+        r = [root]
+        rs = []
+        a = []
+        c = 0
+        while(True):
+            if r[c] is not None:
+                a.append(r[c].val)
+                for i in range(len(r)):
+                    if i==c:
+                        rs.append(r[i].left)
+                        rs.append(r[i].right)
+                    else:
+                        rs.append(r[i])
+                r=rs
+                rs=[]
+            else:
+                c += 1
+            if c>=len(r):
+                return a
