@@ -1,0 +1,1 @@
+# select Email from Person group by Email HAVING count(Email) > 1
